@@ -1,0 +1,28 @@
+/* src/components/ThemeToggle.css */
+
+.theme-toggle-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    outline: none;
+}
+
+.theme-toggle-button:hover {
+    background-color: #0056b3;
+}
+
+.theme-toggle-button:focus {
+    box-shadow: 0 0 0 3px rgba(38, 143, 255, 0.5);
+}
+
+@media (max-width: 768px) {
+    .theme-toggle-button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}

@@ -1,0 +1,81 @@
+/* src/components/HomePage.css */
+
+/* Container for all cards */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 16px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Individual card styling */
+.destination-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    text-decoration: none;
+    color: #333;
+}
+
+.destination-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.destination-card h3 {
+    margin: 16px 0 8px;
+    font-size: 1.25rem;
+}
+
+.destination-card p {
+    margin: 4px 0;
+    font-size: 0.875rem;
+    color: #666;
+}
+
+/* Hover effects */
+.destination-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.destination-card:hover img {
+    opacity: 0.9;
+}
+
+/* Link styling */
+.destination-card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 12px;
+        padding: 16px;
+    }
+
+    .destination-card {
+        padding: 12px;
+    }
+
+    .destination-card h3 {
+        font-size: 1rem;
+    }
+
+    .destination-card p {
+        font-size: 0.75rem;
+    }
+}

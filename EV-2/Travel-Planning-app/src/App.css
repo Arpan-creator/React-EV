@@ -1,0 +1,88 @@
+/* src/App.css */
+
+/* Basic reset for margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+}
+
+/* Container to manage general layout */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Basic link styling */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Theme Toggle button styling */
+button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--button-background);
+    color: var(--button-text);
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--button-background-hover);
+}
+
+/* Layout for admin form and theme toggle */
+.admin-form-container {
+    margin-bottom: 20px;
+}
+
+/* Basic layout adjustments for the main content */
+main {
+    padding: 20px;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    button {
+        font-size: 0.875rem;
+        padding: 8px 16px;
+    }
+}
+
+/* Dark mode styling */
+body.dark-mode {
+    --background-color: #333;
+    --text-color: #f0f0f0;
+    --button-background: #555;
+    --button-text: #f0f0f0;
+    --button-background-hover: #666;
+}
+
+/* Light mode styling */
+body.light-mode {
+    --background-color: #f0f0f0;
+    --text-color: #333;
+    --button-background: #007bff;
+    --button-text: #fff;
+    --button-background-hover: #0056b3;
+}

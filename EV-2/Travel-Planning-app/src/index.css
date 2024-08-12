@@ -1,0 +1,157 @@
+body.ligt{
+    background-color:aliceblue;
+    color:#000;
+}
+body.dark{
+    background-color: rgba(53, 43, 43, 0.532);
+}
+
+    
+/* HomePage.css */
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+    justify-content: center;
+}
+
+/* .destination-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+} */
+
+/* .destination-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.destination-card h3 {
+    margin: 0.5rem 0;
+    color: #333;
+    font-size: 1.25rem;
+}
+
+.destination-card p {
+    margin: 0.25rem 0;
+    color: #666;
+    font-size: 1rem;
+}
+
+.destination-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .card-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .destination-card {
+        padding: 0.5rem;
+    }
+
+    .destination-card h3 {
+        font-size: 1rem;
+    }
+
+    .destination-card p {
+        font-size: 0.875rem;
+    }
+} */
+
+
+/* AdminForm.css */
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: auto;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+input, textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+input[type="text"], input[type="number"] {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    resize: vertical;
+}
+
+button {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+/* DestinationDetail.css */
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+h2 {
+    margin-top: 0;
+    color: #333;
+    font-size: 2rem;
+}
+
+p {
+    margin: 0.5rem 0;
+    color: #666;
+    font-size: 1rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
